@@ -104,6 +104,9 @@ SELECT * FROM final_mapping;
 
 A powerful web-based tool for customizing SQL scripts with replacement rules and generating multiple script versions with meaningful filenames.
 
+<img width="925" height="881" alt="image" src="https://github.com/user-attachments/assets/09d0bd43-943a-43e8-be9a-67daacf8802a" />
+
+
 ## Features
 
 - 📁 Upload multiple SQL files
