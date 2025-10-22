@@ -1,7 +1,7 @@
 # Mark Alecha - Data Engineering Projects
 
 ## Project 1: Financial Accruals Validation 
-**Advanced SQL framework for financial accounting reconciliation**
+**Advanced SQL framework for financial accounting reconciliation related to accruals**
 
 ### Script Architecture:
 WITH multi_system_data AS (
@@ -47,8 +47,8 @@ SELECT * FROM validation_results;
 - Validated $XX billion in financial accruals
 - 100% accurate regulatory reporting post-migration
 
-## Project 2: Financial Product Master Data Engine
-**Automated classification system for banking products**
+## Project 2: Financial Product Master Data Validation
+**Advanced SQL framework for financial accounting reconciliation related to financial transactions**
 
 ### Script Architecture:
 
