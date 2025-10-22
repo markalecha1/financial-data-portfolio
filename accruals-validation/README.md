@@ -1,7 +1,7 @@
-# Financial Accruals Validation 
+# Mark Alecha - Data Engineering Projects
 
-##  Project Overview
-Advanced SQL-based validation framework developed during legacy to SAP S/4HANA migration to ensure accurate financial accruals accounting across multiple banking systems.
+## 📊 Project 1: Financial Accruals Validation 
+**Advanced SQL framework for financial accounting reconciliation**
 
 ### Script Architecture:
 WITH multi_system_data AS (
@@ -47,7 +47,7 @@ SELECT * FROM validation_results;
 - Validated $XX billion in financial accruals
 - 100% accurate regulatory reporting post-migration
 
-## 📈 Project 2: Financial Product Master Data Engine
+## Project 2: Financial Product Master Data Engine
 **Automated classification system for banking products**
 
 ### Script Architecture:
