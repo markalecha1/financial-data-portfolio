@@ -3,10 +3,6 @@
 ## 🎯 Project Overview
 Advanced SQL-based validation framework developed during SAP S/4HANA migration to ensure accurate financial accruals accounting across multiple banking systems.
 
-## 📊 Business Challenge
-- Multiple legacy systems with different accounting treatments
-- Manual reconciliation processes causing regulatory risks
-- Inconsistent accrual categorization across 100+ banking clients
 
 ## 🛠 Solution Architecture
 ```mermaid
