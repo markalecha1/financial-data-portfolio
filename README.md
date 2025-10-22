@@ -1,7 +1,21 @@
 # Mark Alecha - Data Engineering Projects
 
-## Project 1: Financial Accruals Validation 
-**Advanced SQL framework for financial accounting reconciliation related to accruals**
+## Project 1: Dashboard Completeness Validation  
+
+Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
+
+## Files
+- `Dashboard_Accounting_V62_044_U6 18.09.xlsx` - Main dashboard file
+
+## Purpose
+Reconciliation and validation between SPOT, FSDM, and FPSL systems for various financial products including loans, derivatives, guarantees, and account products.
+
+## Systems Integrated
+- SPOT
+- FSDM (Financial Services Data Model)
+- FPSL (Financial Product Subledger)
+- Arctis, Murex, SPEC source systems
+
 
 ### Script Architecture:
 WITH multi_system_data AS (
@@ -42,13 +56,6 @@ SELECT * FROM validation_results;
 - **Business Logic**: 50+ accounting rules implemented in SQL
 - **Data Reconciliation**: Cross-system validation with gap analysis
 - **Performance**: Handled 50,000+ monthly accounting entries
-
-### Business Impact:
-- Validated $XX billion in financial accruals
-- 100% accurate regulatory reporting post-migration
-
-## Project 2: Financial Product Master Data Validation
-**Advanced SQL framework for financial accounting reconciliation related to financial transactions**
 
 ### Script Architecture:
 
@@ -93,25 +100,6 @@ FROM product_categorization source
 LEFT JOIN target_catalog target ON business_keys
 )
 SELECT * FROM final_mapping;
-
-text
-
-### Technical Highlights:
-- **Hierarchical Logic**: Multi-level product classification
-- **Risk Categorization**: Automated regulatory treatment assignment
-- **Cross-System Mapping**: Validation against target taxonomies
-- **Data Quality**: Comprehensive validation rules
-
-### Business Impact:
-- Standardized 20+ product categories bank-wide
-- Enabled accurate Basel III capital calculation
-- 75% reduction in manual categorization effort
-
-## 🔧 Technical Skills Demonstrated
-- **Advanced SQL**: CTEs, Complex Joins, Window Functions, Business Logic
-- **Data Architecture**: Multi-system integration, Data modeling
-- **Financial Domain**: Accounting rules, Regulatory requirements
-- **Tools**: EXASOL, SAP HANA, DBeaver, JIRA
 
 ## 📫 Contact
 - Email: nomerzonalecha1@gmail.com
