@@ -738,6 +738,13 @@ TEMPLATE: |
         {% endblock %} 
         {% endembed %}
 
+        
+**Key Skills Demonstrated**:
+- SQL ETL Development
+- Financial Data Modeling
+- Performance Optimization
+- Regulatory Compliance (UGB/IFRS)
+- Template-based Software Architecture
 
 ## 📫 Contact
 - Email: nomerzonalecha1@gmail.com
