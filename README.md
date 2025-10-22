@@ -1,5 +1,23 @@
 # Mark Alecha - Data Engineering Portfolio
 
+# About Me
+I'm a results-driven Data Engineer and Business Analyst with expertise in building scalable ETL pipelines and automated data solutions for the financial sector. I specialize in bridging the gap between technical teams and business stakeholders, transforming complex data into actionable insights that drive decision-making.
+
+# Core Competencies:
+
+ETL/ELT Pipeline Development & Optimization
+
+Financial Services Data Solutions (FSDM, FPSL, SOURCE, SPOT, OSX)
+
+SQL Excellence 
+
+Data Validation & Quality Assurance
+
+Cross-functional Collaboration & Stakeholder Management
+
+
+
+
 ## Dashboard Completeness Validation  
 
 Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
