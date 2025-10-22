@@ -50,13 +50,6 @@ FULL OUTER JOIN target_system ON key_fields
 )
 SELECT * FROM validation_results;
 
-
-### Technical Highlights:
-- **Complex CTEs**: Multi-layer data transformation
-- **Business Logic**: 50+ accounting rules implemented in SQL
-- **Data Reconciliation**: Cross-system validation with gap analysis
-- **Performance**: Handled 50,000+ monthly accounting entries
-
 ### Script Architecture:
 
 WITH contract_data AS (
@@ -100,6 +93,12 @@ FROM product_categorization source
 LEFT JOIN target_catalog target ON business_keys
 )
 SELECT * FROM final_mapping;
+
+### Technical Highlights:
+- **Complex CTEs**: Multi-layer data transformation
+- **Business Logic**: 50+ accounting rules implemented in SQL
+- **Data Reconciliation**: Cross-system validation with gap analysis
+- **Performance**: Handled 50,000+ monthly accounting entries
 
 ## 📫 Contact
 - Email: nomerzonalecha1@gmail.com
