@@ -4,6 +4,9 @@
 
 Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
 
+<img width="1268" height="697" alt="image" src="https://github.com/user-attachments/assets/f570f4b8-2d33-4694-9edc-3d49a04a2057" />
+
+
 ## Files
 - `DEMO_Completeness_Validation_Dashboard_DummyDATA.xlsx` - Main dashboard file
 
