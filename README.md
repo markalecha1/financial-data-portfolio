@@ -133,6 +133,55 @@ A powerful web-based tool for customizing SQL scripts with replacement rules and
 - JavaScript (ES6)
 - No external dependencies - works offline!
 
+# Project 2: Financial Accrual Data Transformation ETL
+
+## Overview
+This ETL script transforms financial accrual data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes.
+
+## Key Features
+- **Multi-currency accrual processing** for various financial instruments
+- **Accounting system differentiation** (UGB vs IFRS)
+- **Comprehensive fee and interest categorization**
+- **Temporal data handling** with business validity periods
+- **Data quality enforcement** with null/zero value filtering
+
+## Technical Highlights
+- **Template-based architecture** using embedded base templates
+- **CTE (Common Table Expression)** for optimized data processing
+- **Union-based multi-category processing** for different accrual types
+- **Parameterized configuration** for environment flexibility
+
+## Accrual Types Processed
+- Interest (Debit/Credit/Overdraft)
+- Various fee types (Bonus, Loan Commission, Management Fees, etc.)
+- Provision calculations
+- Expense accruals
+
+## Database Schema
+- **Source**: `GESCHAEFT`, `GESCHAEFT_BASIS`, `GESCHAEFT_ABGRENZUNGSWERTE`
+- **Target**: FSDM accrual model with financial contract mapping
+## Data Flow
+1. **Extract**: Join multiple source tables with active record filtering
+2. **Transform**: 
+   - Categorize accounting systems (UGB/IFRS)
+   - Apply business logic multipliers (-1 for correct accounting)
+   - Map to standardized accrual types and categories
+3. **Load**: Insert into target FSDM table with proper typing
+
+## Key Transformations
+- Amount sign correction for accounting standards
+- Conditional accrual type mapping
+- Currency and temporal handling
+- Source system tracking
+
+| Field | Type | Description | Business Logic |
+|-------|------|-------------|----------------|
+| ACCRUAL_TYPE | VARCHAR(128) | InterestIncome/InterestExpense/FeeIncome/FeeExpense | Conditional mapping based on amount sign |
+| AMOUNT_IN_PAYMENT_CURRENCY | DECIMAL(31,6) | Transformed accrual amount | Multiplied by -1 for correct accounting |
+| BUSINESS_VALID_FROM | DATE | Accrual effective date | From BUCHUNGSDATUM |
+| CONDITION_SUBTYPE | VARCHAR(100) | Detailed fee/interest category | Business-specific mapping logic |
+
+
 
 ## 📫 Contact
 - Email: nomerzonalecha1@gmail.com
