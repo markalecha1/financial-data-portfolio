@@ -1,7 +1,7 @@
 # Financial Accruals Reconciliation Engine
 
 ## 🎯 Project Overview
-Advanced SQL-based validation framework developed during SAP S/4HANA migration to ensure accurate financial accruals accounting across multiple banking systems.
+Advanced SQL-based validation framework developed during legacy to SAP S/4HANA migration to ensure accurate financial accruals accounting across multiple banking systems.
 
 
 ## 🛠 Solution Architecture
