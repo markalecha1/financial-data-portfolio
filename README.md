@@ -100,6 +100,34 @@ SELECT * FROM final_mapping;
 - **Data Reconciliation**: Cross-system validation with gap analysis
 - **Performance**: Handled 50,000+ monthly accounting entries
 
+# Project 2: SQL Script Customizer
+
+A powerful web-based tool for customizing SQL scripts with replacement rules and generating multiple script versions with meaningful filenames.
+
+## Features
+
+- 📁 Upload multiple SQL files
+- 🔧 Define custom replacement rules
+- 🎯 Generate all value combinations
+- 📝 Preview generated scripts
+- 💾 Bulk download functionality
+- 🎨 Clean, responsive interface
+
+## How to Use
+
+1. Upload your SQL scripts
+2. Define replacement rules (placeholder → values)
+3. Set filename patterns
+4. Process and download customized scripts
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- No external dependencies - works offline!
+
+
 ## 📫 Contact
 - Email: nomerzonalecha1@gmail.com
 - Phone: 09760180051
