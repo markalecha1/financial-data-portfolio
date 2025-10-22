@@ -1,6 +1,6 @@
 # Mark Alecha - Data Engineering Projects
 
-## 📊 Project 1: Financial Accruals Validation 
+## Project 1: Financial Accruals Validation 
 **Advanced SQL framework for financial accounting reconciliation**
 
 ### Script Architecture:
