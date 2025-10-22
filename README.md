@@ -15,8 +15,7 @@ Data Validation & Quality Assurance
 
 Cross-functional Collaboration & Stakeholder Management
 
-
-
+# SAMPLE PROJECTS AND WORKS
 
 ## Dashboard Completeness Validation  
 
