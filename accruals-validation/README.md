@@ -12,5 +12,5 @@ graph TB
     D[Murex System] --> C
     C --> F[SAP FSDM Layer]
     F --> G[SAP FPSL Layer]
-    F --> H[Dashboard VAlidation Layer]
+    G --> H[Dashboard VAlidation Layer]
 
