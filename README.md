@@ -35,7 +35,7 @@ Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
 - `DEMO_Completeness_Validation_Dashboard_DummyDATA.xlsx` - Main dashboard file
 
 ## Purpose
-Reconciliation and validation between SPOT, FSDM, and FPSL systems for various financial products including loans, derivatives, guarantees, and account products.
+This dashboard serves as the single source of truth for the data migration's health. It answers two critical questions: 'Is the data all there?' (completeness) and 'Is the data correct?' (accuracy). By pinpointing the exact volume, gaps, and discrepancies, it directs the team's focus to the specific areas requiring remediation, de-risking the entire migration effort. 
 
 ## Systems Integrated
 - SPOT
