@@ -17,7 +17,7 @@ Cross-functional Collaboration & Stakeholder Management
 
 # SAMPLE PROJECTS AND WORKS
 
-## Dashboard Completeness Validation  
+## 📂 Dashboard Completeness Validation  
 
 Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
 
@@ -120,7 +120,7 @@ SELECT * FROM final_mapping;
 - **Data Reconciliation**: Cross-system validation with gap analysis
 - **Performance**: Handled 50,000+ monthly accounting entries
 
-# SQL Script Customizer
+# 📂 SQL Script Customizer
 
 A powerful web-based tool for customizing SQL scripts with replacement rules and generating multiple script versions with meaningful filenames.
 
@@ -150,7 +150,7 @@ A powerful web-based tool for customizing SQL scripts with replacement rules and
 - JavaScript (ES6)
 - No external dependencies - works offline!
 
-# Financial Transformation ETL
+# 📂  Financial Transformation ETL
 
 ## Overview
 This ETL script transforms financial data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes.
