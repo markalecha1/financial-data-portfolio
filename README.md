@@ -2,11 +2,11 @@
 
 **Advanced SQL-based reconciliation system for financial accruals accounting across multiple banking systems**
 
-## Business Context
+## 🎯 Business Context
 
 Developed to validate and reconcile accrual accounting entries during SAP S/4HANA migration, ensuring accurate financial reporting for Interest Income, Interest Expense, Fee Income, and Fee Expense across 100+ banking clients.
 
-## Validation Scope
+## 📊 Validation Scope
 
 ### Financial Categories Validated:
 - **Interest Accruals**: Debit/Credit Interest, Overdraft Interest
@@ -20,7 +20,21 @@ Developed to validate and reconcile accrual accounting entries during SAP S/4HAN
 - **Murex**: Trading system integration
 - **SAP FSDM**: Target system validation
 
-  -- Simplified example of accrual categorization logic
+## 🛠 Technical Architecture
+
+```mermaid
+graph TB
+    A[Arctis System] --> C[Accruals Engine]
+    B[BS System] --> C
+    D[Murex System] --> C
+    E[SAP FSDM] --> F[Validation Layer]
+    C --> F
+    F --> G[Reconciliation Reports]
+    F --> H[Data Quality Metrics]
+    
+    style C fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+
+-- Simplified example of accrual categorization logic
 WITH financial_accruals AS (
   SELECT 
     contract_id,
@@ -30,12 +44,12 @@ WITH financial_accruals AS (
       WHEN accrual_type = 'SOLLZINSEN' AND amount < 0 THEN 'InterestIncome'
       WHEN accrual_type = 'HABENZINSEN' AND amount > 0 THEN 'InterestExpense'
       WHEN accrual_type = 'KREDITPROVISION' AND amount > 0 THEN 'FeeIncome'
-      -**- 20+ additional business rules...**
+      -- 20+ additional business rules...
     END AS accounting_category,
     CASE 
       WHEN accounting_category = 'InterestIncome' THEN 'C_DebitInterest'
       WHEN accounting_category = 'InterestExpense' THEN 'C_CreditInterest'
-      **-- Corresponding condition subtypes...**
+      -- Corresponding condition subtypes...
     END AS condition_subtype
   FROM source_accruals
   WHERE reporting_date = :CUTOFF_DATE
