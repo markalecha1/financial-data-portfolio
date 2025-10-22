@@ -1,57 +1,32 @@
-# Financial Accruals & Accounting Validation Framework
+# Mark Alecha - Data Engineering Portfolio
 
-**Advanced SQL-based reconciliation system for financial accruals accounting across multiple banking systems**
+## 🎯 Professional Summary
+Data Engineer and Business Analyst with expertise in financial data systems, ETL development, and data validation. Specialized in building automated data solutions for banking and financial services, with proven ability to bridge technical and business teams.
 
-## 🎯 Business Context
+## 📂 Featured Projects
 
-Developed to validate and reconcile accrual accounting entries during SAP S/4HANA migration, ensuring accurate financial reporting for Interest Income, Interest Expense, Fee Income, and Fee Expense across 100+ banking clients.
+### 🏦 [Financial Accruals Reconciliation Engine](./accruals-validation/)
+Advanced SQL-based validation framework for financial accruals accounting across multiple banking systems during SAP S/4HANA migration.
 
-## 📊 Validation Scope
+**Key Achievements:**
+- Validated $XX billion in accrual accounting entries
+- Automated reconciliation across 4+ financial systems
+- Ensured 100% regulatory compliance for financial reporting
 
-### Financial Categories Validated:
-- **Interest Accruals**: Debit/Credit Interest, Overdraft Interest
-- **Fee Accruals**: Loan Commissions, Management Fees, Commitment Fees
-- **Provision Accruals**: Liability Provisions, Sales Commissions
-- **Expense Accruals**: Handling Fees, Operational Expenses
+### 📊 [Financial Product Master Data Management](./master-data-categorization/)
+Sophisticated data pipeline for automated financial instrument classification and regulatory reporting.
 
-### Multi-System Integration:
-- **Arctis**: Core banking transactions
-- **BS (Bond/Securities)**: Derivatives and securities accounting
-- **Murex**: Trading system integration
-- **SAP FSDM**: Target system validation
+**Key Achievements:**
+- Standardized 20+ product categories across the bank
+- Enabled accurate Basel III capital calculation
+- Reduced manual categorization effort by 75%
 
-## 🛠 Technical Architecture
+## 🔧 Technical Skills
+- **SQL** (Advanced CTEs, Window Functions, Complex Joins)
+- **Data Engineering**: ETL Development, Data Pipeline Automation, Data Modeling
+- **Databases**: EXASOL, SAP HANA, Snowflake, Azure
+- **Tools**: DBeaver, JIRA, AWS, SAP S/4HANA
+- **Methodologies**: Agile/Scrum, Data Validation, Root Cause Analysis
+---
 
-```mermaid
-graph TB
-    A[Arctis System] --> C[Accruals Engine]
-    B[BS System] --> C
-    D[Murex System] --> C
-    E[SAP FSDM] --> F[Validation Layer]
-    C --> F
-    F --> G[Reconciliation Reports]
-    F --> H[Data Quality Metrics]
-    
-    style C fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-
--- Simplified example of accrual categorization logic
-WITH financial_accruals AS (
-  SELECT 
-    contract_id,
-    accrual_type,
-    amount,
-    CASE 
-      WHEN accrual_type = 'SOLLZINSEN' AND amount < 0 THEN 'InterestIncome'
-      WHEN accrual_type = 'HABENZINSEN' AND amount > 0 THEN 'InterestExpense'
-      WHEN accrual_type = 'KREDITPROVISION' AND amount > 0 THEN 'FeeIncome'
-      -- 20+ additional business rules...
-    END AS accounting_category,
-    CASE 
-      WHEN accounting_category = 'InterestIncome' THEN 'C_DebitInterest'
-      WHEN accounting_category = 'InterestExpense' THEN 'C_CreditInterest'
-      -- Corresponding condition subtypes...
-    END AS condition_subtype
-  FROM source_accruals
-  WHERE reporting_date = :CUTOFF_DATE
-)
-SELECT * FROM financial_accruals;
+*Note: All projects have been anonymized to protect client confidentiality. Specific business rules, table names, and proprietary information have been removed.*
