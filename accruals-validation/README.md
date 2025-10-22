@@ -7,11 +7,10 @@ Advanced SQL-based validation framework developed during SAP S/4HANA migration t
 ## 🛠 Solution Architecture
 ```mermaid
 graph TB
-    A[Arctis System] --> C[Accruals Engine]
+    A[Arctis System] --> C[SPOT Layer]
     B[BS System] --> C
     D[Murex System] --> C
-    E[SAP FSDM] --> F[Validation Layer]
-    C --> F
-    F --> G[Reconciliation Reports]
-    F --> H[Data Quality Metrics]
+    C --> F[SAP FSDM Layer]
+    F --> G[SAP FPSL Layer]
+    F --> H[Dashboard VAlidation Layer]
 
