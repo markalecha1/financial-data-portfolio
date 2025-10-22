@@ -1,6 +1,6 @@
-# Mark Alecha - Data Engineering Projects
+# Mark Alecha - Data Engineering Portfolio
 
-## Project 1: Dashboard Completeness Validation  
+## Dashboard Completeness Validation  
 
 Financial accounting reconciliation dashboard for SPOT/FPSL/FSDM systems.
 
@@ -20,7 +20,7 @@ Reconciliation and validation between SPOT, FSDM, and FPSL systems for various f
 - Arctis, Murex, SPEC source systems
 
 
-### Script Architecture:
+### Sample Script Architecture:
 WITH multi_system_data AS (
 -- Consolidate data from 4+ source systems
 SELECT data FROM arctis_system
@@ -53,7 +53,7 @@ FULL OUTER JOIN target_system ON key_fields
 )
 SELECT * FROM validation_results;
 
-### Script Architecture:
+### Sample Script Architecture:
 
 WITH contract_data AS (
 -- Extract and standardize contract information
@@ -103,7 +103,7 @@ SELECT * FROM final_mapping;
 - **Data Reconciliation**: Cross-system validation with gap analysis
 - **Performance**: Handled 50,000+ monthly accounting entries
 
-# Project 2: SQL Script Customizer
+# SQL Script Customizer
 
 A powerful web-based tool for customizing SQL scripts with replacement rules and generating multiple script versions with meaningful filenames.
 
@@ -133,10 +133,10 @@ A powerful web-based tool for customizing SQL scripts with replacement rules and
 - JavaScript (ES6)
 - No external dependencies - works offline!
 
-# Project 2: Financial Accrual Data Transformation ETL
+# Financial Transformation ETL
 
 ## Overview
-This ETL script transforms financial accrual data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes.
+This ETL script transforms financial data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes.
 
 ## Key Features
 - **Multi-currency accrual processing** for various financial instruments
@@ -182,7 +182,7 @@ This ETL script transforms financial accrual data from source systems into a sta
 | CONDITION_SUBTYPE | VARCHAR(100) | Detailed fee/interest category | Business-specific mapping logic |
 
 /*
-Financial Accrual ETL Transformation
+Sample Financial Accrual ETL Transformation
 Purpose: Transform banking transaction data into standardized accrual accounting records
 Author: Your Name
 Domain: Financial Services - Accounting & Regulatory Reporting
