@@ -160,30 +160,19 @@ A powerful web-based tool for customizing SQL scripts with replacement rules and
 # 📂  Financial Transformation ETL
 
 ## Overview
-This ETL script transforms financial data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes.
-
-## Key Features
-- **Multi-currency accrual processing** for various financial instruments
-- **Accounting system differentiation** (UGB vs IFRS)
-- **Comprehensive fee and interest categorization**
-- **Temporal data handling** with business validity periods
-- **Data quality enforcement** with null/zero value filtering
+This ETL script transforms financial data from source systems into a standardized FSDM (Financial Services Data Model) format for accounting and reporting purposes. 
 
 ## Technical Highlights
 - **Template-based architecture** using embedded base templates
 - **CTE (Common Table Expression)** for optimized data processing
 - **Union-based multi-category processing** for different accrual types
-- **Parameterized configuration** for environment flexibility
-
-## Accrual Types Processed
-- Interest (Debit/Credit/Overdraft)
-- Various fee types (Bonus, Loan Commission, Management Fees, etc.)
-- Provision calculations
-- Expense accruals
+- **German Tables - English Standard** for standard requirement of platform
 
 ## Database Schema
 - **Source**: `GESCHAEFT`, `GESCHAEFT_BASIS`, `GESCHAEFT_ABGRENZUNGSWERTE`
 - **Target**: FSDM accrual model with financial contract mapping
+
+## Sample ETL 
 ## Data Flow
 1. **Extract**: Join multiple source tables with active record filtering
 2. **Transform**: 
