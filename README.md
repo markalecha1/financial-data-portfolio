@@ -3,17 +3,24 @@
 # About Me
 I'm a results-driven Data Engineer and Business Analyst with expertise in building scalable ETL pipelines and automated data solutions for the financial sector. I specialize in bridging the gap between technical teams and business stakeholders, transforming complex data into actionable insights that drive decision-making.
 
-# Core Competencies:
+# Technical Skills
+Data Engineering & Databases
+SQL (Advanced): Complex queries, optimization, ETL development
 
-ETL/ELT Pipeline Development & Optimization
+Databases: EXASOL, SAP HANA, Snowflake, AWS, Azure
 
-Financial Services Data Solutions (FSDM, FPSL, SOURCE, SPOT, OSX)
+ETL Development: Data pipeline automation, transformation logic, data validation
 
-SQL Excellence 
+Data Modeling: Financial data structures, relational database design
 
-Data Validation & Quality Assurance
+Tools & Platforms
+Database Tools: DBeaver, SAP S4/HANA
 
-Cross-functional Collaboration & Stakeholder Management
+Project Management: JIRA, Agile/Scrum
+
+Cloud Platforms: AWS, Azure, Snowflake
+
+Automation: VBA, JavaScript, Task Schedulers
 
 # SAMPLE PROJECTS AND WORKS
 
