@@ -1,4 +1,4 @@
-# Mark Alecha - Data Engineering Portfolio
+# Mark Alecha - Data Engineering / Business Architecture Analyst Portfolio
 
 # About Me
 I'm a results-driven Data Engineer and Business Analyst with expertise in building scalable ETL pipelines and automated data solutions for the financial sector. I specialize in bridging the gap between technical teams and business stakeholders, transforming complex data into actionable insights that drive decision-making.
