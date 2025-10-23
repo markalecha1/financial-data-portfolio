@@ -129,6 +129,23 @@ SELECT * FROM final_mapping;
 - **Data Reconciliation**: Cross-system validation with gap analysis
 - **Performance**: Handled 50,000+ monthly accounting entries
 
+## 📂 Dashboard Completeness Monitoring 
+
+This project presents a Power BI dashboard layout designed for monitoring data migration progress, data quality, and validation results for data loadiing in target systems.
+
+<img width="1704" height="1125" alt="image" src="https://github.com/user-attachments/assets/3e340e0a-42a8-4491-8f82-573862131ceb" />
+<img width="1668" height="1119" alt="image" src="https://github.com/user-attachments/assets/aba1fa0c-f695-4ccc-a5ab-44b3ea6ba1e3" />
+
+### 1️⃣ Overview Dashboard
+- KPIs: Source vs Loaded Records, Success Rate, Critical Failures
+- Charts: Records by Status, Success Rate Trend, Data Domain Completeness
+
+ ### 2️⃣ Root Cause Analysis
+- Drill-through analysis of validation failures
+- Filters by Data Domain, FSDM Table, and Batch ID
+- Table of failed records with business owner assignments
+
+
 # 📂 SQL Script Customizer
 
 A powerful web-based tool for customizing SQL scripts with replacement rules and generating multiple script versions with meaningful filenames.
