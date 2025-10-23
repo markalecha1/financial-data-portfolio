@@ -9,6 +9,8 @@ SQL (Advanced): Complex queries, optimization, ETL development
 
 Databases: EXASOL, SAP HANA, Snowflake, AWS, Azure
 
+Dashboarding : PowerBI, Excel
+
 ETL Development: Data pipeline automation, transformation logic, data validation
 
 Data Modeling: Financial data structures, relational database design
